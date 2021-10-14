@@ -329,20 +329,32 @@ header .sub-menu li a:hover {
     max-width: 1200px;
 }
 
-.section--feature .tiles ul {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr); */
+/* Float을 사용한 방법 */
+
+.section--feature .tiles li {
+    max-width: 25%;
+    padding: 34px 24px;
+    float: left;
+    text-align: center;
+    line-height: 1.5;
+    border-right: 1px solid #e5e5e5;
+    box-sizing: border-box;
 }
 
+/* Grid를 사용한 방법 */
+/*
+.section--feature .tiles ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 .section--feature .tiles li {
     padding: 34px 24px;
     text-align: center;
     line-height: 1.5;
     border-right: 1px solid #e5e5e5;
     box-sizing: border-box;
-    float: left;
-    width: 25%;
 }
+*/
 
 .section--feature .tiles li:last-child {
     border-right: none;
@@ -366,8 +378,6 @@ header .sub-menu li a:hover {
 }
 
 /* WHERE IS */
-.setcion--wehere-is {}
-
 .setcion--wehere-is .inner {
     padding-top: 80px;
 }
@@ -420,8 +430,6 @@ header .sub-menu li a:hover {
 }
 
 /* FOOTER */
-footer {}
-
 footer .inner {
     padding: 50px 0;
     border-top: 1px solid #eee;
